@@ -1,11 +1,11 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
+import { MDBBtn } from "mdbreact";
 
 function SubmitButton(){
 	return (
 		<div className="submitbutton">
 			<h1>SUBMITBUTTON</h1>
-			<Button variant="outline-primary">Submit</Button>{' '}
+			<MDBBtn color="success">Submit</MDBBtn>
 		</div>
 	)
 }
