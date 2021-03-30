@@ -1,5 +1,6 @@
 import React from 'react'
 import { MDBBtn } from "mdbreact";
+import '../style/css/main.css'
 
 function SubmitButton(){
 	return (
