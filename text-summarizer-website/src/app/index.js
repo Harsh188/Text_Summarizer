@@ -6,14 +6,14 @@ import 'mdbreact/dist/css/mdb.css';
 import '../style/css/main.css'
 
 import { Input, Output, SubmitButton } from '../components'
+import { Main } from '../pages'
 
 function App() {
   return (
     <>
     <div className="App">
       <Router>
-      	<Input />
-      	<SubmitButton />
+      	<Main/>
       	<Switch>
       		<Route path='/summarizedText' exact component={Output}/>
       	</Switch>

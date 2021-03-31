@@ -5,7 +5,7 @@ import '../style/css/main.css'
 function Input(){
 	return (
 		<div className="input">
-			<h1>sdfsd</h1>
+			<h1>INPUT</h1>
 			<MDBInput type="textarea" label="textarea" rows="5" />
 		</div>
 	)
