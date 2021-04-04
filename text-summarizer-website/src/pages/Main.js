@@ -3,14 +3,27 @@ import '../style/css/main.css'
 
 import { Input, Output, SubmitButton, Heading } from '../components'
 
-function Main(){
-	return (
-		<div className="mainPage">
-			<Heading />
-			<Input />
-      		<SubmitButton />
-		</div>
-	)
+class Main extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = {
+			ready: false,
+			message: "",
+		}
+	}
+	callbackFunction(childData){
+		this.setState({ready: true, message: childData})
+	}
+
+	render(){
+		return (
+			<div className="mainPage">
+				<Heading />
+				<Input parentCallBack = {this.callbackFunction}/>
+	      		<SubmitButton />
+			</div>
+		)
+	}
 }
 
 export default Main;
