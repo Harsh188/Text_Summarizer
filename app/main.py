@@ -14,7 +14,7 @@ def summarize():
         return jsonify(code=403, message="bad request")
     summary = pipeline("summarization", model=model_path, tokenizer=model_path)
     print(summary)
-    print(sumary(text))
+    print(summary(text))
     print(jsonify(summary(text)))
     return jsonify(summary(text))
 
