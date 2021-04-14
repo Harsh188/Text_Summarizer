@@ -15,6 +15,8 @@ COPY . ./app
 EXPOSE 5000
 ENV PORT 5000
 WORKDIR ./app
+RUN pwd
+RUN ls -R
 
 # Use gunicorn as the entrypoint
 CMD exec gunicorn --bind :$PORT main:app --workers 1 --threads 1 --timeout 0
