@@ -1,5 +1,6 @@
 import React from 'react'
 import '../style/css/main.css'
+import api from '../api'
 
 import { Input, Output, SubmitButton, Heading } from '../components'
 
@@ -16,10 +17,18 @@ class Main extends React.Component{
 		this.setState({ready: true, message: childData})
 	}
 
-	callbackFunctionSubmit = () => {
-		console.log(this.state.message)
-		const href = window.location.href
-		window.location.href = href + 'cr/summarize/' + this.state.message
+	callbackFunctionSubmit = async event => {
+		try{
+			console.log(this.state.message)
+			const response = JSON.stringify(await api.getSummary(this.state.message))
+			var summary = JSON.parse(response)
+			console.log(summary)
+		} catch(e){
+			window.alert('Please try again')
+			return
+		}
+		// const href = window.location.href
+		// window.location.href = href + 'cr/summarize/' + this.state.message
 	}
 
 	render(){
