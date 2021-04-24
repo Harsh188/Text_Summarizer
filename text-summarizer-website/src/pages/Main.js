@@ -19,8 +19,12 @@ class Main extends React.Component{
 
 	callbackFunctionSubmit = async event => {
 		try{
+			console.log("Message:")
 			console.log(this.state.message)
 			const response = JSON.stringify(await api.getSummary(this.state.message))
+			console.log("Response:")
+			console.log(response)
+			console.log("Summary:")
 			var summary = JSON.parse(response)
 			console.log(summary)
 		} catch(e){
