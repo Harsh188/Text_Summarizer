@@ -1,8 +1,11 @@
 import os
 from flask import Flask, jsonify, request
 from transformers import PegasusTokenizer, PegasusForConditionalGeneration
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 model_path = "./pegasus-xsum"
 
