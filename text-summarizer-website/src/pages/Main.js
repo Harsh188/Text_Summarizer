@@ -41,9 +41,11 @@ class Main extends React.Component{
 		return (
 			<div className="mainPage">
 				<NavBar/>
-				<Input parentCallBack = {this.callbackFunctionInput}/>
-	      		<SubmitButton ready = {this.state.ready}
-	      		parentCallBack = {this.callbackFunctionSubmit}/>
+				<div className='backgroundContainer'>
+					<Input parentCallBack = {this.callbackFunctionInput}/>
+		      		<SubmitButton ready = {this.state.ready}
+		      		parentCallBack = {this.callbackFunctionSubmit}/>
+	      		</div>
 			</div>
 		)
 	}
