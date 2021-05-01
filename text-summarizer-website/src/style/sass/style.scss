@@ -23,8 +23,6 @@ $brand-bg-color: $brand-white;
 $input-border-focus: $brand-primary;
 $form-group-margin-bottom: 30px;
 
-
-
 // Mixin
 @mixin translateX($translatex) {
 	-moz-transform: translateX($translatex);
@@ -115,6 +113,30 @@ body {
 	color: #757575;
 	background: #fff;
 }
+
+.md-form input[type=text]:focus {
+  box-shadow: 0 1px 0 0 green !important;
+  border-bottom: 2px solid green !important;
+}
+
+.md-form label.active {
+  color: green !important;
+}
+
+.md-form input:focus {
+  border-color: red !important;
+  box-shadow: inset 0 0 0 1px red !important;
+  border-bottom: 1px solid green !important;
+}
+
+.md-form label.active {
+  color: green !important;
+}
+
+.md-inline-form md-input-container.md-input-has-value label{
+  color: green;
+}
+
 #page {
 	position: relative;
 	overflow-x: hidden;
