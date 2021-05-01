@@ -2,7 +2,7 @@ import React from 'react'
 import '../style/css/main.css'
 import api from '../api'
 
-import { Input, Output, SubmitButton, Heading } from '../components'
+import { Input, Output, SubmitButton, Heading, NavBar } from '../components'
 
 class Main extends React.Component{
 	constructor(props){
@@ -40,7 +40,7 @@ class Main extends React.Component{
 
 		return (
 			<div className="mainPage">
-				<Heading />
+				<NavBar/>
 				<Input parentCallBack = {this.callbackFunctionInput}/>
 	      		<SubmitButton ready = {this.state.ready}
 	      		parentCallBack = {this.callbackFunctionSubmit}/>
