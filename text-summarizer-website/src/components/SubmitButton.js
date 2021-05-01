@@ -15,8 +15,7 @@ class SubmitButton extends React.Component{
 
 	render(){
 		return (
-			<div className="submitbutton">
-				<h1>SUBMIT BUTTON</h1>
+			<div className="input">
 				<MDBBtn color="success" onClick={this.handleSubmit}>SUBMIT</MDBBtn>
 			</div>
 		)
