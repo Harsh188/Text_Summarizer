@@ -1,3 +1,4 @@
 import Main from './Main'
+import Summary from './Summary'
 
-export { Main }
+export { Main, Summary }

@@ -5,17 +5,20 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import '../style/css/main.css'
 
-import { Input, Output, SubmitButton } from '../components'
-import { Main } from '../pages'
+import { Main, Summary } from '../pages'
 
 function App() {
   return (
     <>
     <div className="App">
       <Router>
-      	<Main/>
       	<Switch>
-      		<Route path='/summarizedText' exact component={Output}/>
+          <Route exact path="/">
+            <Main/>
+          </Route>
+      		<Route path= "/summarizedText/:summary">
+            <Summary />
+          </Route>
       	</Switch>
       </Router>
     </div>

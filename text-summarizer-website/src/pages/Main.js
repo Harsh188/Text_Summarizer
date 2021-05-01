@@ -2,7 +2,7 @@ import React from 'react'
 import '../style/css/main.css'
 import api from '../api'
 
-import { Input, Output, SubmitButton, Heading, NavBar } from '../components'
+import { Input, SubmitButton, NavBar } from '../components'
 
 class Main extends React.Component{
 	constructor(props){
@@ -22,17 +22,15 @@ class Main extends React.Component{
 			console.log("Message:")
 			console.log(this.state.message)
 			const response = JSON.stringify(await api.getSummary(this.state.message))
-			console.log("Response:")
-			console.log(response)
 			console.log("Summary:")
 			var summary = JSON.parse(response)
-			console.log(summary)
+			console.log(summary.data[0])
 		} catch(e){
 			window.alert('Please try again')
 			return
 		}
-		// const href = window.location.href
-		// window.location.href = href + 'cr/summarize/' + this.state.message
+		const href = window.location.href
+		window.location.href = href + 'summarizedText/' + summary.data[0]
 	}
 
 	render(){
