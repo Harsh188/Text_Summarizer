@@ -18,7 +18,7 @@ Although emerging technology and a surplus of data are resulting in ground break
 
 ## Description: ##
 
-This project is a fully scalable end-to-end abstractive summarizer built on the state of the art [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf) (ICML 2020) model. This deep learning transformer based model was built last year [2020] by incredible people at Google. Our product takes this state of the art model and puts into a production enviroment for any user on the internet to utilize. 
+This project is a fully scalable end-to-end abstractive summarizer built on the state of the art [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf) (ICML 2020) model. This deep learning transformer based model was built last year [2020] by incredible people at Google. Our product takes this state of the art model and puts into a production environment for any user on the internet to utilize. 
 
 > *The main goal of our project* is to familiarize developers to the process of deploying a state of the art deep learning model into production.
 
