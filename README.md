@@ -1,4 +1,5 @@
 # Text_Summarizer
+<img alt="Licence" src="https://img.shields.io/github/license/Harsh188/Text_Summarizer">
 
 This project is a part of my semester long 'mini-project' course at PES University. With the guidance of Dr. S Natarajan and the help of my fellow colleague Zayd J we were able to deploy google's state of the art abstractive text summarization model, PEGASUS, onto the internet for anyone to utilize.
 
