@@ -2,6 +2,8 @@
 
 This project is a part of my semester long 'mini-project' course at PES University. With the guidance of Dr. S Natarajan and the help of my fellow colleague Zayd J we were able to deploy google's state of the art abstractive text summarization model, PEGASUS, onto the internet for anyone to utilize.
 
+[Research Paper](https://docs.google.com/document/d/1_JBpDAIm8TGt2jCxjqpMoZqW_TU3s77H2RT-eP06HGI/edit?usp=sharing)
+
 Started: Jan 2021
 Finished: May 2021
 
